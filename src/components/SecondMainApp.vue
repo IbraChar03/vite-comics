@@ -67,21 +67,19 @@ main {
 
 
     .container {
-        width: 60%;
+        width: 70%;
         height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         color: white;
 
         ul {
-
             display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
+
 
             li {
-                margin-right: 20px;
+                margin-right: 40px;
                 list-style-type: none;
 
                 a {

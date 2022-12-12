@@ -186,11 +186,9 @@ main {
     justify-content: center;
     align-items: center;
     background-image: url("/images/footer-bg.jpg");
-    padding-bottom: 58px;
-
 
     .container {
-        width: 65%;
+        width: 70%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -244,7 +242,7 @@ main {
             position: absolute;
             right: 0;
             z-index: 10;
-            filter: invert(48%) sepia(5%) saturate(174%) hue-rotate(182deg) brightness(85%) contrast(84%);
+            // filter: invert(48%) sepia(5%) saturate(174%) hue-rotate(182deg) brightness(85%) contrast(84%);
         }
 
     }
