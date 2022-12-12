@@ -33,11 +33,15 @@ export default {
 <template>
     <main>
         <div class="container">
-            <a href="">SIGN-UP NOW!</a>
-            <div>
-                <strong class="text-follow">FOLLOW US</strong>
-                <img class="social-img" :src="item.img" alt="" v-for="(item, index) in imgSocial" :key="index">
+            <a href="" class="sign">SIGN-UP NOW!</a>
+            <div class="cont-socials">
 
+                <strong class="text-follow">FOLLOW US</strong>
+
+
+                <a href="" v-for="(item, index) in imgSocial" :key="index">
+                    <img class="social-img" :src="item.img" alt="">
+                </a>
             </div>
         </div>
     </main>
@@ -48,7 +52,7 @@ export default {
 @use "../styles/partials/variables" as *;
 
 main {
-    height: 130px;
+    height: 150px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -66,7 +70,7 @@ main {
         align-items: center;
         color: white;
 
-        a {
+        .sign {
             text-decoration: none;
             color: white;
             font-weight: bold;
@@ -76,14 +80,20 @@ main {
 
         }
 
+        .cont-socials {
+            height: 100%;
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .text-follow {
             color: $color-type;
             font-size: 20px;
-            margin-right: 20px;
         }
 
         .social-img {
-            margin-right: 20px;
             vertical-align: middle;
             margin-bottom: 10px;
         }

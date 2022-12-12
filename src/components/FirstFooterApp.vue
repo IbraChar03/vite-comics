@@ -200,18 +200,15 @@ main {
         color: white;
 
         .cont-footer {
-            // margin-top: 50px;
             width: 380px;
             height: 100%;
             display: flex;
             flex-wrap: wrap;
             margin-top: 50px;
 
-            // align-items: center;
 
             .cont {
                 width: calc(100% / 3);
-                // height: 100%;
 
                 li {
                     list-style-type: none;
@@ -239,15 +236,10 @@ main {
                 .shop {
                     margin-top: -130px;
 
-
                 }
 
 
-
-
             }
-
-
 
         }
 

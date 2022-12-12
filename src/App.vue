@@ -26,6 +26,7 @@ export default {
   </main>
 
   <footer>
+
     <FirstFooterApp />
     <SecondFooterApp />
 
