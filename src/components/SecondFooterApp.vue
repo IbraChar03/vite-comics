@@ -27,6 +27,8 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #303030;
+    position: relative;
+    z-index: 50;
 
 
     .container {

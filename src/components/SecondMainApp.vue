@@ -61,6 +61,8 @@ main {
     justify-content: center;
     align-items: center;
     background-color: $color-type;
+    position: relative;
+    z-index: 50;
 
 
     .container {
