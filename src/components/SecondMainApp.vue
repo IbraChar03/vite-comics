@@ -77,15 +77,17 @@ main {
         ul {
 
             display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
 
             li {
-                margin-right: 30px;
+                margin-right: 20px;
                 list-style-type: none;
 
                 a {
                     text-decoration: none;
                     color: white;
-                    font-size: 15px;
+                    font-size: 13px;
                     margin-left: 10px;
                 }
 

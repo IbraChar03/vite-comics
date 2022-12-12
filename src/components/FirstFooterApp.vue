@@ -190,10 +190,9 @@ main {
 
 
     .container {
-        width: 60%;
+        width: 65%;
         height: 100%;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         color: white;
         position: relative;
