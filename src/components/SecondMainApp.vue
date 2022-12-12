@@ -55,7 +55,8 @@ export default {
 @use "../styles/partials/variables" as *;
 
 main {
-    height: 150px;
+    // height: 150px;
+    padding: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -78,7 +79,7 @@ main {
             display: flex;
 
             li {
-                margin-right: 40px;
+                margin-right: 30px;
                 list-style-type: none;
 
                 a {

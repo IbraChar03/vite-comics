@@ -167,11 +167,8 @@ export default {
                     </ul>
                 </div>
             </div>
-            <div>
-                <img src="/images/dc-logo-bg.png" class="img">
-            </div>
 
-
+            <img src="/images/dc-logo-bg.png" class="img">
 
         </div>
     </main>
@@ -182,13 +179,14 @@ export default {
 @use "../styles/partials/variables" as *;
 
 main {
-    height: 380px;
+    // height: 500px;
+    padding: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("/images/footer-bg.jpg");
-    padding-bottom: 20px;
+    padding-bottom: 58px;
 
 
     .container {
@@ -198,14 +196,13 @@ main {
         justify-content: space-between;
         align-items: center;
         color: white;
+        position: relative;
 
         .cont-footer {
-            width: 380px;
+            //  width: 450px;
             height: 100%;
             display: flex;
             flex-wrap: wrap;
-            margin-top: 50px;
-
 
             .cont {
                 width: calc(100% / 3);
@@ -217,7 +214,6 @@ main {
                         color: white;
                         font-weight: bold;
 
-                        font-weight: bold;
 
                     }
 
@@ -234,7 +230,7 @@ main {
                 }
 
                 .shop {
-                    margin-top: -130px;
+                    margin-top: -50px;
 
                 }
 
@@ -244,10 +240,12 @@ main {
         }
 
         .img {
-            width: 550px;
-            height: 550px;
-            position: relative;
+            // width: 550px;
+            // height: 550px;
+            position: absolute;
+            right: 0;
             z-index: 10;
+            filter: invert(48%) sepia(5%) saturate(174%) hue-rotate(182deg) brightness(85%) contrast(84%);
         }
 
     }

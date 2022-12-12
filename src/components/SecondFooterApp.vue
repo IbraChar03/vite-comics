@@ -52,7 +52,8 @@ export default {
 @use "../styles/partials/variables" as *;
 
 main {
-    height: 150px;
+    // height: 150px;
+    padding: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -77,6 +78,7 @@ main {
             font-size: 18px;
             border: 2px solid $color-type;
             padding: 18px;
+            text-align: center;
 
         }
 

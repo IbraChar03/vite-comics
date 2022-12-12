@@ -68,7 +68,7 @@ export default {
       </div>
 
       <ul>
-        <li v-for="(item, index) in links" :key="index">
+        <li v-for="(item, index) in links" :key="index" class="list-header">
           <a :href="item.href" :class="{ active: item.attributeType }">
             {{ item.name }}
           </a>
@@ -85,7 +85,8 @@ export default {
 @use "../styles/partials/variables" as *;
 
 header {
-  height: 120px;
+  // height: 120px;
+  padding: 20px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -117,8 +118,14 @@ header {
         color: black;
         font-size: 13px;
 
+
         &.active {
-          color: blue;
+          color: $color-type;
+          height: 1px;
+          position: relative;
+
+          width: 40%;
+          border-bottom: 4px solid $color-type;
         }
 
         &:hover {

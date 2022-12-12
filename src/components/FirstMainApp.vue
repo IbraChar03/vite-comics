@@ -21,7 +21,8 @@ export default {
 
 <style lang="scss" scoped>
 main {
-    height: 130px;
+    // height: 130px;
+    padding: 70px;
     width: 100%;
     display: flex;
     justify-content: center;
