@@ -86,8 +86,7 @@ main {
                 list-style-type: none;
 
                 a {
-                    text-decoration: none;
-                    color: white;
+                    @include link;
                     font-size: 13px;
                     margin-left: 10px;
                 }

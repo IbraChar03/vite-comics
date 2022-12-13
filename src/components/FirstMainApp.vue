@@ -144,9 +144,9 @@ main {
         }
 
         a {
-            text-decoration: none;
-            color: white;
+            @include link;
         }
+
 
 
     }

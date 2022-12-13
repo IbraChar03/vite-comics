@@ -1,1 +1,6 @@
-$color-type : #0282f9
+$color-type : #0282f9;
+
+@mixin link {
+    text-decoration: none;
+    color: white;
+}

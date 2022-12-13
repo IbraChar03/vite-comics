@@ -55,8 +55,7 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: white;
+    @include link;
 }
 
 .cont-btn {
