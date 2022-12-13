@@ -122,7 +122,6 @@ main {
     }
 
     .jumbotron {
-        max-width: 100%;
         width: 100%;
         // height: 300px;
         padding: 170px;
