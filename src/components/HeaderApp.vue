@@ -2,59 +2,55 @@
 export default {
   data() {
     return {
+      active: 0,
       links: [
         {
           name: "CHARACTERS",
           href: "#",
-          attributeType: false
         },
         {
           name: "COMICS",
           href: "#",
-          attributeType: true
         },
         {
           name: "MOVIES",
           href: "#",
-          attributeType: false
         },
         {
           name: "TV",
           href: "#",
-          attributeType: false
         },
         {
           name: "GAMES",
           href: "#",
-          attributeType: false
         },
         {
           name: "COLLECTIBLES",
           href: "#",
-          attributeType: false
         },
         {
           name: "VIDEOS",
           href: "#",
-          attributeType: false
         },
         {
           name: "FANS",
           href: "#",
-          attributeType: false
         },
         {
           name: "NEWS",
           href: "#",
-          attributeType: false
         },
         {
           name: "SHOP",
           href: "#",
-          attributeType: false
         },
       ]
 
+    }
+  },
+  methods: {
+    activeLink(index) {
+      this.active = index
     }
   }
 }
@@ -68,8 +64,9 @@ export default {
       </div>
 
       <ul>
+        <!-- :class="{ active: item.attributeType }" -->
         <li v-for="(item, index) in links" :key="index" class="list-header">
-          <a :href="item.href" :class="{ active: item.attributeType }">
+          <a :href="item.href" :class="(active === index) ? `active` : ``" @click="activeLink(index)">
             {{ item.name }}
           </a>
 
