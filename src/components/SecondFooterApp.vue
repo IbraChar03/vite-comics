@@ -64,6 +64,7 @@ main {
 
 
     .container {
+        max-width: 1200px;
         width: 70%;
         height: 100%;
         display: flex;

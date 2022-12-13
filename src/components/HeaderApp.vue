@@ -85,6 +85,7 @@ export default {
 @use "../styles/partials/variables" as *;
 
 header {
+
   // height: 120px;
   padding: 20px;
   width: 100%;
@@ -93,6 +94,7 @@ header {
   justify-content: center;
 
   .cont-header {
+    max-width: 1200px;
     width: 60%;
     height: 100%;
     display: flex;
@@ -119,18 +121,15 @@ header {
         font-size: 13px;
 
 
-        &.active {
+        &.active,
+        &:hover {
           color: $color-type;
           height: 1px;
           position: relative;
-
           width: 40%;
           border-bottom: 4px solid $color-type;
         }
 
-        &:hover {
-          color: $color-type;
-        }
       }
 
     }
