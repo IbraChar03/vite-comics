@@ -67,6 +67,7 @@ main {
 
 
     .container {
+        max-width: 1200px;
         width: 70%;
         height: 100%;
         display: flex;
@@ -91,8 +92,9 @@ main {
 
                 .img {
                     height: 55px;
-                    width: 46px;
+                    width: 50px;
                     vertical-align: middle;
+                    object-fit: contain;
                 }
 
 

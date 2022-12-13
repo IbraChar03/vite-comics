@@ -48,7 +48,7 @@ ul {
 
         img {
             height: 160px;
-            width: 160px;
+            width: 150px;
         }
 
     }
@@ -71,6 +71,7 @@ a {
         background-color: $color-type;
         color: white;
         font-size: 15px;
+        font-weight: bold;
     }
 
 }

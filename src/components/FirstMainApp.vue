@@ -88,7 +88,12 @@ export default {
 </script>
 
 <template>
+    <div class="jumbotron">
+        <img src="" alt="">
+        <a href="" class="text-current">CURRENT SERIES </a>
+    </div>
     <main>
+
         <div class="container">
             <CardContainer :cards="cardList" />
         </div>
@@ -96,6 +101,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+
 main {
     // height: 130px;
     padding: 70px;
@@ -111,6 +118,36 @@ main {
         height: 100%;
         color: white;
         font-size: 25px;
+
+    }
+
+    .jumbotron {
+        max-width: 100%;
+        width: 100%;
+        // height: 300px;
+        padding: 170px;
+        background-image: url("/images/jumbotron.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        .text-current {
+            padding: 20px 30px;
+            background-color: $color-type;
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            bottom: -10%;
+            right: 70%;
+            font-weight: bold;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
 
     }
 }
