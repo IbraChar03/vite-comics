@@ -70,9 +70,6 @@ main {
         max-width: 1200px;
         width: 70%;
         height: 100%;
-        // display: flex;
-        // justify-content: space-evenly;
-        // align-items: center;
         color: white;
 
         ul {
@@ -80,9 +77,7 @@ main {
             justify-content: space-evenly;
             align-items: center;
 
-
             li {
-                // margin-right: 40px;
                 list-style-type: none;
 
                 a {

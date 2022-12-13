@@ -103,16 +103,18 @@ export default {
                     href: "#"
                 },
             ],
-            shop: [
-                {
-                    name: "Shop DC",
-                    href: "#"
-                },
-                {
-                    name: "Shop DC Collectibles",
-                    href: "#"
-                },
-            ],
+            shop:
+                [
+
+                    {
+                        name: "Shop DC",
+                        href: "#"
+                    },
+                    {
+                        name: "Shop DC Collectibles",
+                        href: "#"
+                    },
+                ],
 
         }
     }
@@ -167,19 +169,6 @@ export default {
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="cont height">
-                    <ul class="shop">
-                        <li class="title ">
-                            <strong class="font-title">SHOP</strong>
-                        </li>
-                        <li class="sub" v-for="(item, index) in arrayFooter" :key="index">
-                            <strong class="font-title">{{item.title}}</strong>
-                            <a :href="item.href">{{ item.name }} </a>
-
-                        </li>
-                    </ul>
-                </div> -->
-
 
             </div>
 
