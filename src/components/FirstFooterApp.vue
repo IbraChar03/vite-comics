@@ -245,12 +245,11 @@ main {
 
 
         .img {
-            // width: 550px;
-            // height: 550px;
+
             position: absolute;
             right: 0;
             z-index: 10;
-            // filter: invert(48%) sepia(5%) saturate(174%) hue-rotate(182deg) brightness(85%) contrast(84%);
+
         }
 
     }
