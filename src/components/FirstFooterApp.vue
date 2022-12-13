@@ -5,115 +5,141 @@ export default {
             dcComics:
                 [
                     {
-                        name: "Characters",
-                        href: "#"
-                    },
-                    {
-                        name: "Comics",
-                        href: "#"
-                    },
-                    {
-                        name: "Movies",
-                        href: "#"
-                    },
-                    {
-                        name: "TV",
-                        href: "#"
-                    },
-                    {
-                        name: "Games",
-                        href: "#"
-                    },
-                    {
-                        name: "Videos",
-                        href: "#"
-                    },
-                    {
-                        name: "News",
-                        href: "#"
-                    },
+                        title: "DC COMICS",
+                        list: [
+                            {
+                                name: "Characters",
+                                href: "#"
+                            },
+                            {
+                                name: "Comics",
+                                href: "#"
+                            },
+                            {
+                                name: "Movies",
+                                href: "#"
+                            },
+                            {
+                                name: "TV",
+                                href: "#"
+                            },
+                            {
+                                name: "Games",
+                                href: "#"
+                            },
+                            {
+                                name: "Videos",
+                                href: "#"
+                            },
+                            {
+                                name: "News",
+                                href: "#"
+                            },
 
+                        ],
+
+                    },
                 ],
+
             dc: [
                 {
-                    name: "Terms Of Use",
-                    href: "#"
-                },
-                {
-                    name: "Privacy policy (New)",
-                    href: "#"
-                },
-                {
-                    name: "Ad Choices",
-                    href: "#"
-                },
-                {
-                    name: "Advertising",
-                    href: "#"
-                },
-                {
-                    name: "Jobs",
-                    href: "#"
-                },
-                {
-                    name: "Subscriptions",
-                    href: "#"
-                },
-                {
-                    name: "Talent WOrkshops",
-                    href: "#"
-                },
-                {
-                    name: "CPSC Certificates",
-                    href: "#"
-                },
-                {
-                    name: "Ratings",
-                    href: "#"
-                },
-                {
-                    name: "Shop Help",
-                    href: "#"
-                },
-                {
-                    name: "Contact Us",
-                    href: "#"
-                },
 
+                    title: "DC",
+                    list: [
+
+
+                        {
+                            name: "Terms Of Use",
+                            href: "#"
+                        },
+                        {
+                            name: "Privacy policy (New)",
+                            href: "#"
+                        },
+                        {
+                            name: "Ad Choices",
+                            href: "#"
+                        },
+                        {
+                            name: "Advertising",
+                            href: "#"
+                        },
+                        {
+                            name: "Jobs",
+                            href: "#"
+                        },
+                        {
+                            name: "Subscriptions",
+                            href: "#"
+                        },
+                        {
+                            name: "Talent WOrkshops",
+                            href: "#"
+                        },
+                        {
+                            name: "CPSC Certificates",
+                            href: "#"
+                        },
+                        {
+                            name: "Ratings",
+                            href: "#"
+                        },
+                        {
+                            name: "Shop Help",
+                            href: "#"
+                        },
+                        {
+                            name: "Contact Us",
+                            href: "#"
+                        },
+                    ]
+                }
             ],
             sites: [
                 {
-                    name: "DC",
-                    href: "#"
-                },
-                {
-                    name: "MAD Magazine",
-                    href: "#"
-                },
-                {
-                    name: "DC Kids",
-                    href: "#"
-                },
-                {
-                    name: "DC Universe",
-                    href: "#"
-                },
-                {
-                    name: "DC Power Visa",
-                    href: "#"
-                },
+                    title: "SITES",
+                    list: [
+
+                        {
+                            name: "DC",
+                            href: "#"
+                        },
+                        {
+                            name: "MAD Magazine",
+                            href: "#"
+                        },
+                        {
+                            name: "DC Kids",
+                            href: "#"
+                        },
+                        {
+                            name: "DC Universe",
+                            href: "#"
+                        },
+                        {
+                            name: "DC Power Visa",
+                            href: "#"
+                        },
+                    ]
+                }
             ],
             shop:
                 [
+                    {
 
-                    {
-                        name: "Shop DC",
-                        href: "#"
-                    },
-                    {
-                        name: "Shop DC Collectibles",
-                        href: "#"
-                    },
+                        title: "SHOP",
+                        list: [
+
+                            {
+                                name: "Shop DC",
+                                href: "#"
+                            },
+                            {
+                                name: "Shop DC Collectibles",
+                                href: "#"
+                            },
+                        ]
+                    }
                 ],
 
         }
@@ -127,44 +153,36 @@ export default {
             <div class="cont-footer">
                 <div class="cont">
                     <ul>
-                        <li class="title">
-                            <strong class="font-title">DC COMICS</strong>
-                        </li>
                         <li class="sub" v-for="(item, index) in dcComics" :key="index">
-                            <a :href="item.href">{{ item.name }} </a>
+                            <a href="" class="title-text ">{{ item.title }}</a>
+                            <a :href="item.href" v-for="(items, index) in item.list">{{ items.name }} </a>
 
                         </li>
                     </ul>
                 </div>
                 <div class="cont">
                     <ul>
-                        <li class="title">
-                            <strong class="font-title">DC</strong>
-                        </li>
                         <li class="sub" v-for="(item, index) in dc" :key="index">
-                            <a :href="item.href">{{ item.name }} </a>
+                            <a href="" class="title-text ">{{ item.title }}</a>
+                            <a :href="item.href" v-for="(items, index) in item.list">{{ items.name }} </a>
 
                         </li>
                     </ul>
                 </div>
                 <div class="cont">
                     <ul>
-                        <li class="title">
-                            <strong class="font-title">SITES</strong>
-                        </li>
                         <li class="sub" v-for="(item, index) in sites" :key="index">
-                            <a :href="item.href">{{ item.name }} </a>
+                            <a href="" class="title-text ">{{ item.title }}</a>
+                            <a :href="item.href" v-for="(items, index) in item.list">{{ items.name }} </a>
 
                         </li>
                     </ul>
                 </div>
                 <div class="cont height">
-                    <ul class="shop">
-                        <li class="title ">
-                            <strong class="font-title">SHOP</strong>
-                        </li>
+                    <ul>
                         <li class="sub" v-for="(item, index) in shop" :key="index">
-                            <a :href="item.href">{{ item.name }} </a>
+                            <a href="" class="title-text ">{{ item.title }}</a>
+                            <a :href="item.href" v-for="(items, index) in item.list">{{ items.name }} </a>
 
                         </li>
                     </ul>
@@ -210,19 +228,24 @@ main {
                 width: calc(100% / 3);
 
                 li {
-                    line-height: 21px;
+
                     list-style-type: none;
 
                     a {
+                        line-height: 21px;
+                        display: block;
                         text-decoration: none;
                         color: #6c6d6f;
 
                     }
 
-                    .font-title {
-                        font-size: 18px;
-
+                    .title-text {
+                        color: white;
+                        font-weight: bold;
+                        margin-bottom: 6px;
                     }
+
+
                 }
 
                 .shop {
@@ -233,13 +256,10 @@ main {
 
             }
 
-        }
+            .height {
+                margin-top: -60px;
 
-        .title {
-            color: white;
-            font-weight: bold;
-            margin-bottom: 6px;
-
+            }
 
         }
 
