@@ -2,37 +2,38 @@
 export default {
     data() {
         return {
-            dcComics: [
-                {
-                    name: "Characters",
-                    href: "#"
-                },
-                {
-                    name: "Comics",
-                    href: "#"
-                },
-                {
-                    name: "Movies",
-                    href: "#"
-                },
-                {
-                    name: "TV",
-                    href: "#"
-                },
-                {
-                    name: "Games",
-                    href: "#"
-                },
-                {
-                    name: "Videos",
-                    href: "#"
-                },
-                {
-                    name: "News",
-                    href: "#"
-                },
+            dcComics:
+                [
+                    {
+                        name: "Characters",
+                        href: "#"
+                    },
+                    {
+                        name: "Comics",
+                        href: "#"
+                    },
+                    {
+                        name: "Movies",
+                        href: "#"
+                    },
+                    {
+                        name: "TV",
+                        href: "#"
+                    },
+                    {
+                        name: "Games",
+                        href: "#"
+                    },
+                    {
+                        name: "Videos",
+                        href: "#"
+                    },
+                    {
+                        name: "News",
+                        href: "#"
+                    },
 
-            ],
+                ],
             dc: [
                 {
                     name: "Terms Of Use",
@@ -180,7 +181,7 @@ export default {
 
 main {
     // height: 500px;
-    padding: 80px;
+    padding: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -206,14 +207,8 @@ main {
                 width: calc(100% / 3);
 
                 li {
+                    line-height: 21px;
                     list-style-type: none;
-
-                    .title {
-                        color: white;
-                        font-weight: bold;
-
-
-                    }
 
                     a {
                         text-decoration: none;
@@ -236,6 +231,15 @@ main {
             }
 
         }
+
+        .title {
+            color: white;
+            font-weight: bold;
+            margin-bottom: 6px;
+
+
+        }
+
 
         .img {
             // width: 550px;

@@ -119,6 +119,7 @@ header {
         text-decoration: none;
         color: black;
         font-size: 13px;
+        font-weight: bold;
 
 
         &.active,
