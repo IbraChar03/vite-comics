@@ -14,18 +14,20 @@ export default {
 <template>
     <ul>
 
-        <li v-for="(card, index) in cards" :key="index">
+        <li v-for="(card, index) in cards"
+            :key="index">
             <a href="">
-                <img :src="card.thumb" alt="">
+                <img :src="card.thumb"
+                    alt="">
                 <div class="text">{{ card.series }}</div>
             </a>
         </li>
 
     </ul>
     <div class="cont-btn">
-        <a href="" class="btn">LOAD MORE</a>
+        <a href=""
+            class="btn">LOAD MORE</a>
     </div>
-
 </template>
 
 <style lang="scss" scoped>
